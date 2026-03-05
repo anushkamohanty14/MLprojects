@@ -748,7 +748,7 @@ import torch
      weights_only=False
  )
 
- print("✅ Embeddings loaded successfully.")
+ print("Embeddings loaded successfully.")
  print("Total embeddings:", len(img_embeddings))
 
 # Inspect shape and count
@@ -2359,7 +2359,7 @@ print("Final test feature shape:", X_full_test.shape)
 # 7. SAVE FINAL TEST FEATURES
 # ------------------------------------------------------------
 joblib.dump(X_full_test, f"{save_path}/X_combined_test.joblib")
-print(f"✅ Saved combined test embeddings → {save_path}/X_combined_test.joblib")
+print(f"Saved combined test embeddings → {save_path}/X_combined_test.joblib")
 
 # ============================================================
 # TEST PREDICTION USING SAVED ENSEMBLE MODELS
@@ -2410,7 +2410,7 @@ submission = pd.DataFrame({
 out_path = f"{save_path}/test_out.csv"
 submission.to_csv(out_path, index=False)
 
-print(f"\n✅ Saved submission file → {out_path}")
+print(f"\n Saved submission file → {out_path}")
 print(f"Total predictions: {len(submission)}")
 print(submission.head())
 
